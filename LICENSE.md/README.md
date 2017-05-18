@@ -1,1 +1,2 @@
 # SpringProjects
+https://github.com/Codingpedia/demo-rest-jersey-spring
