@@ -5,6 +5,7 @@
 	<groupId>net.codejava</groupId>
 	<artifactId>SpringMvcHibernateXML</artifactId>
 	<name>SpringMvcHibernateXML</name>
+	<packaging>war</packaging>
 	<version>1.0.0-BUILD-SNAPSHOT</version>
 
 	<properties>

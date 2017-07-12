@@ -28,7 +28,7 @@
     <bean id="dataSource" class="org.apache.commons.dbcp2.BasicDataSource" destroy-method="close">
         <property name="driverClassName" value="oracle.jdbc.driver.OracleDriver"/>
         <property name="url" value="jdbc:oracle:thin:@localhost:1521:xe"/>
-        <property name="username" value="sys as SYSDBA"/>
+        <property name="username" value="sys as sysdba"/>
         <property name="password" value="ullasdb"/>
     </bean>	
     
@@ -44,7 +44,7 @@
         <property name="sessionFactory" ref="sessionFactory" />
     </bean>
     
-	<bean id="userDao" class="net.codejava.spring.dao.UserDAOImpl">
+	<bean id="userDao" class="net.codejava.spring.dao.MutaionEntryDAOImpl">
 	    <constructor-arg>
 	        <ref bean="sessionFactory" />
 	    </constructor-arg>
